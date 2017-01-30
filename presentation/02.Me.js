@@ -9,14 +9,14 @@ import {
 export default function Me() {
   return (
     <div>
-      <Heading size={4} textColor="tertiary">Christian Gill</Heading>
+      <Heading size={4} textColor="tertiary">Kimberly Noel</Heading>
       <Text margin="50px 0px 0px">
-        <Link href="https://gillchristian.xyz" target="_blank" textColor="quaternary">
-          Full Stack JS
+        <Link href="https://education.github.com/experts" target="_blank" textColor="quaternary">
+          Campus Expert
         </Link>
         {' @ '}
-        <Link href="https://www.altoroslabs.com" target="_blank" textColor="quaternary">
-          Altoros
+        <Link href="https://education.github.com/" target="_blank" textColor="quaternary">
+          GitHub
         </Link>
       </Text>
     </div>
