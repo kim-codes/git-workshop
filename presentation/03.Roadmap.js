@@ -37,7 +37,7 @@ const listItems = list => (
 export default function Roadmap() {
   return (
     <div>
-      <Heading>Contenido</Heading>
+      <Heading>Content</Heading>
       <Layout>
         <Fill>
           {listItems(left)}

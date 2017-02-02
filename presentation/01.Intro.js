@@ -12,7 +12,7 @@ export default function Intro({image}) {
   return (
     <div>
       <Heading size={1} fit caps lineHeight={1} textColor="primary">
-        Developing wit Git
+        Developing with Git
       </Heading>
       <Layout>
         <Fill />
