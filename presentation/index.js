@@ -66,6 +66,7 @@ const images = {
   foldersMess: require("../assets/git-mess.png"),
   foldersBetter: require("../assets/git-better.png"),
   gitLogo: require("../assets/git-logo.png"),
+  gitHubLogo: require("../assets/githublogo.png"),
   howGitWorks: require("../assets/how-git-works.png"),
   kat: require("../assets/kat.png"),
   logo: require("../assets/formidable-logo.svg"),
@@ -91,7 +92,7 @@ export default class Presentation extends React.Component {
       <Spectacle theme={theme}>
         <Deck transition={["slide"]} transitionDuration={750}>
           <Slide bgColor="secondary" notes={titlelize(notes.intro)}>
-            <Intro image={images.gitLogo.replace("/", "")}/>
+            <Intro image={images.gitHubLogo.replace("/", "")}/>
           </Slide>
           <Slide bgColor="primary" notes={titlelize(notes.me)}>
             <Me />
