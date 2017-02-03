@@ -83,7 +83,9 @@ const theme = createTheme({
   primary: "#e06666",
   secondary: "#333333",
   tertiary: "white",
-  quaternary: "#22BAD9"
+  quaternary: "#22BAD9",
+  quinary: "#E57254",
+  senary: "#46BCDE",
 });
 
 export default class Presentation extends React.Component {

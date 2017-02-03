@@ -26,7 +26,7 @@ const right = [
 ];
 
 const listItems = list => (
-  <List textColor="tertiary">
+  <List textColor="senary">
     {list.map(
       (item, key) => <ListItem key={key}>{item}</ListItem>
     )}
@@ -36,7 +36,7 @@ const listItems = list => (
 export default function Roadmap() {
   return (
     <div>
-      <Heading>Content For Today</Heading>
+      <Heading textColor="quinary">Content For Today</Heading>
       <Layout>
         <Fill>
           {listItems(left)}
