@@ -5,22 +5,29 @@ import {
   Text,
   Image,
   Layout,
-  Fill
+  Fill,
+  Link
 } from "spectacle";
 
 export default function Intro({image}) {
   return (
     <div>
-      <Heading size={1} fit caps lineHeight={1} textColor="primary">
-        Developing with Git
-      </Heading>
+      <Heading size={1} textColor="tertiary">Welcome!</Heading>
+      <Heading size={4} textColor="primary" margin="100px">Kimberly Noel</Heading>
       <Layout>
-        <Fill />
-        <Fill />
         <Fill>
-          <Image src={image} margin="150px 0px 0px 50px" height="180px" />
+          <Image src={image} height="200px" />
         </Fill>
       </Layout>
+      <Text>
+        <Link href="https://education.github.com/experts" target="_blank" textColor="quaternary">
+          Campus Expert
+        </Link>
+        {' @ '}
+        <Link href="https://education.github.com/" target="_blank" textColor="quaternary">
+          GitHub
+        </Link>
+      </Text>
     </div>
   );
 }
