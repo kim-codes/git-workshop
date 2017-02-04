@@ -19,7 +19,6 @@ export default function Git({image}) {
       <Fill>
         <Image src={image} />
       </Fill>
-
     </Layout>
 
   );

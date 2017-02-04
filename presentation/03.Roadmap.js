@@ -26,7 +26,7 @@ const right = [
 ];
 
 const listItems = list => (
-  <List textColor="senary">
+  <List  textColor="senary">
     {list.map(
       (item, key) => <ListItem key={key}>{item}</ListItem>
     )}

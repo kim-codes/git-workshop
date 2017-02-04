@@ -28,11 +28,11 @@ import Me from "./02.Me";
 import Roadmap from "./03.Roadmap";
 import Problem from "./04.Problem";
 import Solution from "./05.Solution";
-import AllTheThings from "./06.AllTheThings";
 import Git from "./07.Git";
 import Setup from "./08.Setup";
 import Clients from "./09.Clients";
 import GaaS from "./10.GaaS";
+import AllTheThings from "./06.AllTheThings";
 import HowItWorks from "./11.HowItWorks";
 import Config from "./11.1.Config";
 import Create from "./12.Create";
@@ -59,13 +59,13 @@ require("normalize.css");
 require("spectacle/lib/themes/default/index.css");
 
 const images = {
-  allTheThings: require("../assets/all-the-things.jpg"),
   branches: require("../assets/branches.png"),
   city: require("../assets/city.jpg"),
   client: require("../assets/client.png"),
   foldersMess: require("../assets/git-mess.png"),
   foldersBetter: require("../assets/git-better.png"),
   gitLogo: require("../assets/git-logo.png"),
+  gitLogoColor: require("../assets/git-logo-1.png"),
   gitHubLogo: require("../assets/githublogo.png"),
   howGitWorks: require("../assets/how-git-works.png"),
   kat: require("../assets/kat.png"),
@@ -86,7 +86,7 @@ const theme = createTheme({
   primary: "#DC5151",
   secondary: "#333333",
   tertiary: "white",
-  quaternary: "#22BAD9",
+  quaternary: "black",
   quinary: "#E57254",
   senary: "#46BCDE",
 });
@@ -100,7 +100,7 @@ export default class Presentation extends React.Component {
             <Intro image={images.versionControl.replace("/", "")}/>
           </Slide>
           <Slide bgColor="primary" notes={titlelize(notes.me)}>
-            <Me />
+            <Me image={images.gitHubLogo.replace("/", "")}/>
           </Slide>
           <Slide bgColor="secondary" notes={titlelize(notes.roadmap)}>
             <Roadmap />
@@ -115,32 +115,21 @@ export default class Presentation extends React.Component {
               }}
             />
           </Slide>
-          <Slide
-            bgImage={images.city.replace("/", "")}
-            bgDarken={0.75}
-            notes={titlelize(notes.solution)}
+          <Slide bgColor="secondary" notes={titlelize(notes.solution)}
           >
             <Solution />
           </Slide>
           <Slide
-            transition={["slide"]}
-            bgColor="tertiary"
-            notes={titlelize(notes.allTheThings)}
-          >
-            <AllTheThings image={images.allTheThings.replace("/", "")} />
-          </Slide>
-          <Slide
-            bgColor="secondary"
+
             align="center center"
             notes={titlelize(notes.git)}
             bgImage={images.terminal.replace("/", "")}
             bgDarken={0.75}
           >
-            <Git image={images.gitLogo.replace("/", "")} />
+            <Git image={images.gitLogoColor.replace("/", "")} />
           </Slide>
           <Slide
-            bgImage={images.setup.replace("/", "")}
-            bgDarken={0.75}
+            bgColor="secondary"
             notes={titlelize(notes.setup)}
           >
             <Setup />
@@ -158,6 +147,12 @@ export default class Presentation extends React.Component {
             notes={titlelize(notes.gaas)}
           >
             <GaaS />
+          </Slide>
+          <Slide
+            bgColor="secondary"
+            notes={titlelize(notes.allTheThings)}
+          >
+            <AllTheThings image={images.gitHubLogo.replace("/", "")} />
           </Slide>
           <Slide
             bgColor="primary"
