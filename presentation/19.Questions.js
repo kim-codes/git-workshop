@@ -6,6 +6,6 @@ import {
 
 export default function Thanks({image}) {
   return (
-    <Heading textColor="primary">Preguntas?</Heading>
+    <Heading textColor="primary">Questions?</Heading>
   );
 }

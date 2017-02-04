@@ -40,7 +40,6 @@ import AddCommit from "./13.AddCommit";
 import Push from "./14.Push";
 import Branches from "./15.Branches";
 import UpdateAndMerge from "./16.UpdateAndMerge";
-import Logs from "./17.Logs";
 import Resources from "./18.Resources";
 import Questions from "./19.Questions";
 import Thanks from "./20.Thanks";
@@ -76,7 +75,7 @@ const images = {
   setup: require("../assets/setup.jpg"),
   subversion: require("../assets/subversion_logo.png"),
   terminal: require("../assets/terminal.png"),
-  thanks: require("../assets/thanks.gif"),
+  thanks: require("../assets/last-img.gif"),
   versionControl: require("../assets/version-control.png"),
 };
 
@@ -179,17 +178,14 @@ export default class Presentation extends React.Component {
           <Slide bgColor="primary" notes={titlelize(notes.updateAndMerge)}>
             <UpdateAndMerge />
           </Slide>
-          <Slide bgColor="primary" notes={titlelize(notes.logs)}>
-            <Logs />
-          </Slide>
           <Slide bgColor="primary" notes={titlelize(notes.resources)}>
             <Resources />
           </Slide>
-          <Slide bgColor="tertiary" notes={titlelize(notes.questions)}>
+          <Slide bgColor="secondary" notes={titlelize(notes.questions)}>
             <Questions />
           </Slide>
           <Slide
-            bgColor="secondary"
+            bgColor="primary"
             transition={["spin", "slide"]}
             notes={titlelize(notes.thanks)}
           >

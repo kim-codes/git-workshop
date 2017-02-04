@@ -8,7 +8,7 @@ import {
 export default function HowItWorks({image}) {
   return (
     <div>
-      <Heading margin="0 auto 30px">Repositorios</Heading>
+      <Heading margin="0 auto 30px">Repositories</Heading>
       <Image src={image} />
     </div>
   );
