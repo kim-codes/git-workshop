@@ -178,7 +178,7 @@ export default class Presentation extends React.Component {
           <Slide bgColor="primary" notes={titlelize(notes.updateAndMerge)}>
             <UpdateAndMerge />
           </Slide>
-          <Slide bgColor="primary" notes={titlelize(notes.resources)}>
+          <Slide bgColor="secondary" notes={titlelize(notes.resources)}>
             <Resources />
           </Slide>
           <Slide bgColor="secondary" notes={titlelize(notes.questions)}>
