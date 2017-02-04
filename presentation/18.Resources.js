@@ -29,7 +29,7 @@ const resources = [
 export default function Resources() {
   return (
     <div>
-      <Heading size={2} margin="10px 10px 50px">
+      <Heading size={2} margin="10px 10px 50px" textColor="quinary">
         Useful Resources
       </Heading>
       {resources.map((item, key) => (
