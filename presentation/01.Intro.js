@@ -11,14 +11,11 @@ import {
 export default function Intro({image}) {
   return (
     <div>
-      <Heading size={1} fit caps lineHeight={1} textColor="primary">
-        Developing with Git
-      </Heading>
+      <Heading size={1} textColor="tertiary">Welcome!</Heading>
+      <Heading size={4} textColor="senary" margin="100px">Intro to Version Control</Heading>
       <Layout>
-        <Fill />
-        <Fill />
         <Fill>
-          <Image src={image} margin="150px 0px 0px 50px" height="180px" />
+          <Image src={image} height="200px" />
         </Fill>
       </Layout>
     </div>

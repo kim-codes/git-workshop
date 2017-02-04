@@ -9,12 +9,12 @@ import {
 } from "spectacle";
 
 const left = [
-  'Sistemas de versionado',
+  'Version Control Systems',
   'Git',
   'Setup',
-  'Clientes',
-  'Git como servicio',
-  'Repositorios'
+  'Clients',
+  'GitHub',
+  'Repositories'
 ];
 
 const right = [
@@ -22,12 +22,11 @@ const right = [
   'Push & Remote',
   'Branches',
   'Update & Merge',
-  'Logs',
-  'Recursos útiles'
+  'Useful Resources'
 ];
 
 const listItems = list => (
-  <List textColor="tertiary">
+  <List  textColor="senary">
     {list.map(
       (item, key) => <ListItem key={key}>{item}</ListItem>
     )}
@@ -37,7 +36,7 @@ const listItems = list => (
 export default function Roadmap() {
   return (
     <div>
-      <Heading>Content</Heading>
+      <Heading textColor="quinary">Content For Today</Heading>
       <Layout>
         <Fill>
           {listItems(left)}

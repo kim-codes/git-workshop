@@ -6,7 +6,7 @@ import {
 } from "spectacle";
 
 const config =
-`$ git config --global user.name "NOMBRE"
+`$ git config --global user.name "NAME"
 $ git config --global user.email "EMAIL"
 `;
 
@@ -14,7 +14,7 @@ export default function Config() {
   return (
     <div>
       <Heading size={2} textColor="tertiary">
-        Configuración
+        Configuration
       </Heading>
       <CodePane
         style={{fontSize: 22}}

@@ -29,20 +29,20 @@ const resources = [
 export default function Resources() {
   return (
     <div>
-      <Heading size={2} margin="10px 10px 50px">
-        Recursos útiles
+      <Heading size={2} margin="10px 10px 50px" textColor="quinary">
+        Useful Resources
       </Heading>
       {resources.map((item, key) => (
         <Link key={key} href={item.url} target="_blank">
-          <Heading size={6} textColor="quaternary">{item.text}</Heading>
+          <Heading size={6} textColor="senary">{item.text}</Heading>
         </Link>
       ))}
       <Heading size={6} textColor="secondary">
-        <Link href="https://github.com/jlord/git-it-electron" target="_blank" textColor="quaternary">
+        <Link href="https://github.com/jlord/git-it-electron" target="_blank" textColor="senary">
           git-it
         </Link>
         {' / '}
-        <Link href="https://github.com/jlord/git-it-electron/releases" target="_blank" textColor="quaternary">
+        <Link href="https://github.com/jlord/git-it-electron/releases" target="_blank" textColor="senary">
           download
         </Link>
       </Heading>
