@@ -1,7 +1,7 @@
 import React from "react";
 
 import {
-  Appear,
+  Heading,
   Image,
   Layout,
   Fill
@@ -9,17 +9,16 @@ import {
 
 export default function Problem({images}) {
   return (
-    <Layout>
-      <Fill>
-        <Appear>
-          <Image src={images.mess} />
-        </Appear>
-      </Fill>
+    <div>
+      <Heading size={1} caps fit textColor="tertiary">Version Control Systems</Heading>
+      <Layout>
         <Fill>
-        <Appear>
-          <Image src={images.better} />
-        </Appear>
-      </Fill>
-    </Layout>
+            <Image src={images.git} />
+            <Image src={images.mer} />
+            <Image src={images.sub} />
+        </Fill>
+      </Layout>
+    </div>
+
   );
 }

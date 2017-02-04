@@ -9,7 +9,7 @@ import {
 } from "spectacle";
 
 const left = [
-  'Versioning Systems',
+  'Version Control Systems',
   'Git',
   'Setup',
   'Clients',

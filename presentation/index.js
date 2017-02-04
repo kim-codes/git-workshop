@@ -71,16 +71,19 @@ const images = {
   kat: require("../assets/kat.png"),
   logo: require("../assets/formidable-logo.svg"),
   markdown: require("../assets/markdown.png"),
+  mercurial: require("../assets/mercurial-icon.png"),
   office: require("../assets/office.jpg"),
   setup: require("../assets/setup.jpg"),
+  subversion: require("../assets/subversion_logo.png"),
   terminal: require("../assets/terminal.png"),
   thanks: require("../assets/thanks.gif"),
+  versionControl: require("../assets/version-control.png"),
 };
 
 preloader(images);
 
 const theme = createTheme({
-  primary: "#e06666",
+  primary: "#DC5151",
   secondary: "#333333",
   tertiary: "white",
   quaternary: "#22BAD9",
@@ -94,7 +97,7 @@ export default class Presentation extends React.Component {
       <Spectacle theme={theme}>
         <Deck transition={["slide"]} transitionDuration={750}>
           <Slide bgColor="secondary" notes={titlelize(notes.intro)}>
-            <Intro image={images.gitHubLogo.replace("/", "")}/>
+            <Intro image={images.versionControl.replace("/", "")}/>
           </Slide>
           <Slide bgColor="primary" notes={titlelize(notes.me)}>
             <Me />
@@ -105,7 +108,9 @@ export default class Presentation extends React.Component {
           <Slide bgColor="primary" notes={titlelize(notes.problem)}>
             <Problem
               images={{
-                mess: images.foldersMess.replace("/", ""),
+                git: images.gitLogo.replace("/", ""),
+                mer: images.mercurial.replace("/", ""),
+                sub: images.subversion.replace("/", ""),
                 better: images.foldersBetter.replace("/", ""),
               }}
             />
