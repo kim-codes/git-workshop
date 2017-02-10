@@ -34,11 +34,11 @@ import Clients from "./09.Clients";
 import GaaS from "./10.GaaS";
 import AllTheThings from "./06.AllTheThings";
 import HowItWorks from "./11.HowItWorks";
+import Branches from "./15.Branches";
 import Config from "./11.1.Config";
 import Create from "./12.Create";
 import AddCommit from "./13.AddCommit";
 import Push from "./14.Push";
-import Branches from "./15.Branches";
 import UpdateAndMerge from "./16.UpdateAndMerge";
 import Resources from "./18.Resources";
 import Questions from "./19.Questions";
@@ -66,6 +66,7 @@ const images = {
   gitLogo: require("../assets/git-logo.png"),
   gitLogoColor: require("../assets/git-logo-1.png"),
   gitHubLogo: require("../assets/githublogo.png"),
+  gitHubLogoOne: require("../assets/githublogo-1.png"),
   howGitWorks: require("../assets/how-git-works.png"),
   kat: require("../assets/kat.png"),
   logo: require("../assets/formidable-logo.svg"),
@@ -151,7 +152,7 @@ export default class Presentation extends React.Component {
             bgColor="secondary"
             notes={titlelize(notes.allTheThings)}
           >
-            <AllTheThings image={images.gitHubLogo.replace("/", "")} />
+            <AllTheThings image={images.gitHubLogoOne.replace("/", "")} />
           </Slide>
           <Slide
             bgColor="primary"
@@ -159,6 +160,9 @@ export default class Presentation extends React.Component {
             notes={titlelize(notes.howItWorks)}
           >
             <HowItWorks image={images.howGitWorks.replace("/", "")} />
+          </Slide>
+          <Slide bgColor="black" notes={titlelize(notes.branches)}>
+            <Branches image={images.branches.replace("/", "")} />
           </Slide>
           <Slide bgColor="primary" notes={titlelize(notes.create)}>
             <Config />
@@ -171,9 +175,6 @@ export default class Presentation extends React.Component {
           </Slide>
           <Slide bgColor="primary" notes={titlelize(notes.push)}>
             <Push />
-          </Slide>
-          <Slide bgColor="black" notes={titlelize(notes.branches)}>
-            <Branches image={images.branches.replace("/", "")} />
           </Slide>
           <Slide bgColor="primary" notes={titlelize(notes.updateAndMerge)}>
             <UpdateAndMerge />
